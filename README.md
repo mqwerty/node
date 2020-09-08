@@ -1,0 +1,1 @@
+Skeleton for NodeJS projects
