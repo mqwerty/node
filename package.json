@@ -55,6 +55,7 @@
     ]
   },
   "nodemonConfig": {
+    "ext": "json,js,ts",
     "exec": "node --trace-warnings -r ts-node/register -- ./src/index.ts"
   }
 }
