@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-var-requires */
 const jestConf = require('./jest.config')
 
 module.exports = {
@@ -13,10 +14,14 @@ module.exports = {
   extends: ['prettier', 'eslint:recommended', 'plugin:node/recommended', 'plugin:@typescript-eslint/recommended'],
   plugins: ['@typescript-eslint'],
   rules: {
+    'no-console': 'error',
     'node/no-unsupported-features/es-builtins': 0,
     'node/no-unsupported-features/es-syntax': 0,
+    'node/no-extraneous-import': 0,
     'node/no-missing-import': 0,
-    'no-console': 'error',
+    'node/no-unpublished-import': 0,
+    '@typescript-eslint/no-explicit-any': 0,
+    '@typescript-eslint/explicit-module-boundary-types': 0,
   },
   overrides: [
     {
