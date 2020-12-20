@@ -14,7 +14,7 @@ module.exports = {
   extends: ['prettier', 'eslint:recommended', 'plugin:node/recommended', 'plugin:@typescript-eslint/recommended'],
   plugins: ['@typescript-eslint'],
   rules: {
-    'no-console': 'error',
+    'no-console': 0,
     'node/no-unsupported-features/es-builtins': 0,
     'node/no-unsupported-features/es-syntax': 0,
     'node/no-extraneous-import': 0,
@@ -22,6 +22,7 @@ module.exports = {
     'node/no-unpublished-import': 0,
     '@typescript-eslint/no-explicit-any': 0,
     '@typescript-eslint/explicit-module-boundary-types': 0,
+    '@typescript-eslint/no-non-null-assertion': 0,
   },
   overrides: [
     {
