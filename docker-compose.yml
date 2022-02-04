@@ -1,0 +1,8 @@
+version: '3'
+services:
+  api-admin:
+    image: mqwerty/node:dev
+    build: .
+    restart: always
+    environment:
+      NODE_ENV: production
