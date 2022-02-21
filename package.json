@@ -15,7 +15,7 @@
   },
   "scripts": {
     "postinstall": "husky install",
-    "start": "npm run build && node build/index.js",
+    "start": "npm run build && node --enable-source-maps build/index.js",
     "dev": "nodemon",
     "build": "rm -rf build && tsc",
     "typecheck": "tsc --noEmit",

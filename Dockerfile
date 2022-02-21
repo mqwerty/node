@@ -14,4 +14,4 @@ WORKDIR /app
 COPY --chown=app:app --from=build /app ./
 EXPOSE 3000
 ENTRYPOINT []
-CMD ["node", "/app/build/index.js"]
+CMD ["node", "--enable-source-maps", "/app/build/index.js"]
