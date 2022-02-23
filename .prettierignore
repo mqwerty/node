@@ -3,6 +3,7 @@
 .idea/**
 **/node_modules/**
 build/**
+coverage/**
 tmp/**
 package-lock.json
 tsconfig.json

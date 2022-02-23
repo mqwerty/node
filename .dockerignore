@@ -3,6 +3,7 @@
 /.vscode/
 /node_modules/
 /build/
+/coverage/
 /tmp/
 /README.md
 /LICENSE
