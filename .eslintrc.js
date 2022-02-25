@@ -3,14 +3,11 @@ const jestConf = require('./jest.config')
 
 module.exports = {
   env: {
-    es2020: true,
+    es2021: true,
     node: true,
   },
   parser: '@typescript-eslint/parser',
-  parserOptions: {
-    ecmaVersion: 12,
-    sourceType: 'module',
-  },
+  parserOptions: { sourceType: 'module' },
   extends: ['prettier', 'eslint:recommended', 'plugin:node/recommended', 'plugin:@typescript-eslint/recommended'],
   plugins: ['@typescript-eslint'],
   rules: {

@@ -1,6 +1,8 @@
 import 'dotenv/config'
 import log from './log'
 import main from './main'
+
+// main
 ;(async () => {
   try {
     const res = await main()
