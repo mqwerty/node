@@ -6,7 +6,7 @@ import main from './main'
 ;(async () => {
   try {
     const res = await main()
-    log.trace({ key: 'index.result', res }, 'success')
+    log.info({ key: 'index.result', res }, 'success')
   } catch (err) {
     log.fatal({ key: 'index.fatal', err })
     // eslint-disable-next-line no-process-exit
